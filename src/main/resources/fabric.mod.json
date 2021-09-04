@@ -1,31 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "alttools",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "AltTools",
+  "description": "Useful changes for working with multiple Minecraft Accounts",
   "authors": [
-    "Me!"
+    "inventivetalent"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://inventivetalent.org/",
+    "sources": "https://github.com/InventivetalentDev/AltTools"
   },
-
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
-
-  "environment": "*",
+  "environment": "client ",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "org.inventivetalent.alttools.AltToolsMod"
     ]
   },
   "mixins": [
     "modid.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
@@ -33,6 +29,5 @@
     "java": ">=16"
   },
   "suggests": {
-    "another-mod": "*"
   }
 }
